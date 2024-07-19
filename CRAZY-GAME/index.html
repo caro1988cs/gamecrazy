@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quanto è Pazzo il Tuo Ufficio?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quanto è Pazzo il Tuo Ufficio?</h1>
+        <form id="survey-form">
+            <div class="question">
+                <label for="name">Inserisci il tuo nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="question">
+                <label>Qual è il tuo costume di Halloween più strano che hai mai indossato?</label>
+                <div class="button-group">
+                    <button type="button" data-value="10">Supereroe con pantofole</button>
+                    <button type="button" data-value="15">Frutta tropicale</button>
+                    <button type="button" data-value="20">Costume di animali selvatici</button>
+                    <button type="button" data-value="5">Altri (specificare nella risposta)</button>
+                </div>
+                <input type="hidden" id="costume" name="costume">
+            </div>
+            <div class="question">
+                <label>Se potessi avere un superpotere ridicolo, quale sceglieresti?</label>
+                <div class="button-group">
+                    <button type="button" data-value="20">Volare mentre mangio gelato</button>
+                    <button type="button" data-value="15">Parlare con le piante</button>
+                    <button type="button" data-value="10">Diventare invisibile quando dormo</button>
+                    <button type="button" data-value="5">Altri (specificare nella risposta)</button>
+                </div>
+                <input type="hidden" id="superpower" name="superpower">
+            </div>
+            <div class="question">
+                <label>Qual è il comportamento più strano che hai notato in un collega (senza fare nomi!)?</label>
+                <div class="button-group">
+                    <button type="button" data-value="20">Parlare da solo con oggetti inanimati</button>
+                    <button type="button" data-value="15">Cantare in sottofondo durante le riunioni</button>
+                    <button type="button" data-value="10">Organizzare gare di chiacchiere tra colleghi</button>
+                    <button type="button" data-value="5">Altri (specificare nella risposta)</button>
+                </div>
+                <input type="hidden" id="strange-behavior" name="strange-behavior">
+            </div>
+            <div class="question">
+                <label>Qual è la cosa più bizzarra che hai fatto per divertimento durante una pausa lavoro?</label>
+                <div class="button-group">
+                    <button type="button" data-value="25">Corsa con le sedie da ufficio</button>
+                    <button type="button" data-value="20">Maratona di giochi da tavolo</button>
+                    <button type="button" data-value="15">Sfida di danza improvvisata</button>
+                    <button type="button" data-value="5">Altri (specificare nella risposta)</button>
+                </div>
+                <input type="hidden" id="bizarre-activity" name="bizarre-activity">
+            </div>
+            <button type="submit">Invia Risposte</button>
+        </form>
+        <div id="result" class="result"></div>
+        <div id="leaderboard" class="leaderboard"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
